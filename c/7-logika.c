@@ -15,6 +15,10 @@ void suma_xor(char a, char b)
 	printf("suma xor %d ^ %d = %d\n", a, b, a ^ b);
 }
 
+void negacja(char a)
+{
+	printf("negacja !%d  = %d\n", a, !a);
+}
 
 
 int main()
@@ -35,6 +39,9 @@ int main()
 	suma_xor(zero, jeden);
 	suma_xor(jeden, zero);
 	suma_xor(jeden, jeden);
+
+	negacja(zero);
+	negacja(jeden);
 
 	char a=3;
 	char b=1;

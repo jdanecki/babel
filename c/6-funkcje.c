@@ -32,7 +32,7 @@ int main()
 	echo(10);
 
 	operacja=dodaj;
-	printf("wynik operjacji na %d i %d=%d\n", a, b, operacja(a,b));
+	printf("wynik operacji na %d i %d=%d\n", a, b, operacja(a,b));
 
 	printf("a = %d b=%d\n", a, b);
 	zwieksz(&a, &b);
