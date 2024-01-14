@@ -7,7 +7,7 @@ int dodaj(int a, int b)
 
 int echo(int e)
 {
-	puts("echo"); 
+	printf("echo e=%d\n", e); 
 	e--;
 	if (e) echo(e);
 }

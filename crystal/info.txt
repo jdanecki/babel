@@ -1,0 +1,7 @@
+* similar to ruby, ale jest kompilowany przed uruchomieniem
+* typowanie statyczne, typy są sprawdzane w czasie kompilacji
+* można łączyć z C
+* https://crystal-lang.org/reference/1.11/crystal_for_rubyists/index.html
+
+
+

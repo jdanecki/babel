@@ -15,7 +15,9 @@ int main()
 	enum miesiac {
 		styczen,
 		luty,
-		maj=5};
+		maj=5,
+		czerwiec,
+	};
 
 	printf("string=%s liczba=%d znak=%c wskaźnik=%p wartość pod wskaźnikiem=%d\n", string, liczba, znak, wskaznik, *wskaznik);
 	*wskaznik = 456;
@@ -23,7 +25,8 @@ int main()
 
 	enum miesiac s=styczen;
 	enum miesiac m = maj;
+	enum miesiac c = czerwiec;
 
-	printf("miesiące:  styczen=%d maj=%d\n",s, m);
+	printf("miesiące:  styczen=%d maj=%d czerwiec=%d\n",s, m, c);
 	return 0;
 }
