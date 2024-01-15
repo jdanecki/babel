@@ -46,3 +46,4 @@ puts p.suma
 puts p.suma
 puts p.dodatek
 
+puts "p.send \"get_x\" #{p.send "get_x"}"

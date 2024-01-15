@@ -32,11 +32,19 @@ while true
 end
 
 (1..5).each do | i|
-	puts "i=#{i}"
+  puts "1..5 -> i=#{i}"
 end
 
-for l in (1..5)
-	puts "for l=#{l}"
+for l in (1...5)
+  puts "for 1...5 -> l=#{l}"
+  case 
+  when l == 3
+    puts "l=3"
+  end
+end
+
+5.times do |a|
+  puts "5.times a=#{a}"
 end
 
 liczba=["jeden", "dwa", "trzy"]
@@ -46,5 +54,13 @@ end
 
 for f in liczba
   puts "f=#{f}"
+  case f
+  when "dwa"
+    puts "to jest dwa"
+  else
+    puts "coś innego niż dwa"
+  end
 end
+
+
 

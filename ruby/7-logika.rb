@@ -2,10 +2,12 @@
 
 def iloczyn(a, b)
 	puts "iloczyn #{a} && #{b} = #{a && b}"
+	puts "iloczyn #{a} and #{b} = #{a and b}"
 end
 
 def suma(a, b)
 	puts "suma #{a} || #{b} = #{ a || b}"
+	puts "suma #{a} || #{b} = #{ a or b}"
 end
 
 def negacja( a)

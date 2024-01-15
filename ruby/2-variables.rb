@@ -76,7 +76,10 @@ h1={:klucz => "value"}
 puts h1
 
 r=1..10
-puts r
+puts "range 1..10=#{r}"
+
+r=1...10
+puts "range 1...10=#{r}"
 
 module Miesiac 
 		STYCZEN=1
@@ -88,4 +91,24 @@ end
 puts Miesiac::STYCZEN
 puts Miesiac::Maj
 puts Miesiac::Czerwiec
+
+puts "1.to_s => #{1.to_s} #{1.to_s.class}"
+puts "\"1\".to_i => #{1.to_s.to_i} #{1.to_s.to_i.class}"
+puts "\"1.1\".to_f => #{1.1.to_s.to_f} #{1.1.to_s.to_f.class}"
+
+puts "ala"+"kot"
+puts "1"+"2"
+puts "echo" * 4
+
+puts "letni".reverse
+
+puts "#tag".include?"#"
+
+text=<<END
+jakiś sobie
+długi tekst
+END
+
+puts text
+
 

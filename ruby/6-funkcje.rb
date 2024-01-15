@@ -98,6 +98,13 @@ puts "f to #{f} f.class to #{f.class}"
 suma=Proc.new { |a,b| (a+b).to_s }
 puts "suma=#{suma.call(1, 2)}"
 
+suma1=Proc.new do |a,b| 
+  (a+b).to_s 
+end
+
+puts "suma=#{suma.call(1, 2)}"
+puts "suma1=#{suma1.call(1, 2)}"
+
 roznica= ->(x , y) { x-y }
 puts "roznica=#{roznica.call(3, 2)}"
 
