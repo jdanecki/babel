@@ -57,6 +57,8 @@ def echo(e)
 	end
 end
 
+echo 10
+
 def caller(val1 : Int32, val2 : Int32, &foo : (Int32, Int32) -> Int32) : Int32
 	puts("caller")
 	foo.call(val1, val2)

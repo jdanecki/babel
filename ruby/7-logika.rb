@@ -1,4 +1,4 @@
-#!/bin/crystal
+#!/bin/ruby
 
 def iloczyn(a, b)
 	puts "iloczyn #{a} && #{b} = #{a && b}"
@@ -36,3 +36,4 @@ puts "iloczyn: #{a} & #{b} = #{a & b}"
 puts "suma: #{a} | #{b} = #{ a | b}"
 puts "suma modulo 2: #{a} ^ #{b} = #{ a ^ b}"
 puts "negacja: ~#{a} = #{~a}"
+
