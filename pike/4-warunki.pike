@@ -1,3 +1,4 @@
+#!/usr/local/bin/pike
 int main()
 {
 	int liczba1=2, liczba2=3;

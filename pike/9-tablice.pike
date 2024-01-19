@@ -1,3 +1,4 @@
+#!/usr/local/bin/pike
 
 #define rozmiar 10
 #define rozmiar_x 2

@@ -48,7 +48,7 @@ int main()
 	char c=2;
 	
 	printf("iloczyn: %d & %d = %d\n", a, b, a & b);
-	printf("suma: %d | %d = %d\n", b, c, b | c);
+	printf("suma: %d | %d = %d\n", b, c, b & c);
 	printf("suma modulo 2 (xor) %d ^ %d = %d\n", b, c, b ^ c);
 	printf("negacja ~%d = %d\n", b, ~b);
 

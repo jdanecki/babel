@@ -1,3 +1,4 @@
+#!/usr/local/bin/pike
 int main()
 {
 	int b, c, d, e, f, g=0;

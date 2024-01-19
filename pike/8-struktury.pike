@@ -1,3 +1,4 @@
+#!/usr/local/bin/pike
 class samochod
 {
 	string marka;

@@ -1,0 +1,20 @@
+#!/bin/tclsh
+
+puts [info commands]
+puts [info functions]
+puts [info globals]
+puts [info locals]
+puts [info proc]
+puts [info vars]
+puts [info patchlevel]
+puts [info script]
+puts [info tclversion]
+puts [pid]
+puts [info level]
+
+proc funkcja {arg} {
+	puts "arg=$arg"
+}
+
+puts [info body funkcja]
+

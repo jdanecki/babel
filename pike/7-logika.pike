@@ -1,3 +1,4 @@
+#!/usr/local/bin/pike
 void iloczyn(int a, int b)
 {
 	write("iloczyn %d && %d = %d\n", a, b, a && b);
