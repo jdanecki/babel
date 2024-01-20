@@ -1,0 +1,4 @@
+go run 1-hello.go
+go build 1-hello.go; ./1-hello
+
+
