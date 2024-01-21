@@ -1,0 +1,5 @@
+https://cpan.perl.org/
+perl -e  'print "hello"'
+
+debugger
+perl -d program
