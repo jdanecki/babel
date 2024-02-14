@@ -1,3 +1,4 @@
+#!/bin/bash
 liczba1=2
 liczba2=3
 

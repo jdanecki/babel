@@ -1,3 +1,4 @@
+#!/bin/bash
 rozmiar=10
 rozmiar_x=2
 rozmiar_y=5
