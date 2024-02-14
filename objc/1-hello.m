@@ -10,7 +10,7 @@ void function()
 #include <stdio.h>
 void function()
 {
-printf("hello\n");	
+	printf("hello\n");	
 }
 #endif
 

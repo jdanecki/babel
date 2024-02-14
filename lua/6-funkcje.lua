@@ -31,6 +31,12 @@ echo(10)
 operacja=dodaj;
 print("wynik operacji na", a, "i", b, "=", operacja(a,b))
 
+operacja1 = function(a, b)
+	return a-b;
+end
+
+print("operacja1 odejmij na", a, "i", b,"=", operacja1(a,b))
+
 print("a=", a, "b=", b)
 a, b = zwieksz(a, b)
 print("a po zwiekszeniu=", a)
@@ -38,7 +44,17 @@ print("b po zwiekszeniu=", b)
 
 foo=function(f)
 	print("function foo: f=", f)
+	if (type(f) == "table") 
+	then
+		print("f to tablica")
+	else
+		print("f to ", type(f))
+	end
 end
 
 foo(123)
+foo {456}
+foo({789})
+print("foo type=", type(foo))
+
 

@@ -43,4 +43,5 @@ print("10" + tostring(1))
 print("łączenie stringów 10" .. 1)
 print("łączenie z przecinkiem 10", 1)
 
+print(type(tostring(123)))
 
