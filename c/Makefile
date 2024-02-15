@@ -1,6 +1,6 @@
 all: 
-	gcc 1-hello.c -o 1-hello.bin
-	gcc 2-variables.c -o 2-variables.bin
+	gcc 1-czesc.c -o 1-czesc.bin
+	gcc 2-zmienne.c -o 2-zmienne.bin
 	gcc 3-operatory.c -o 3-operatory.bin
 	gcc 4-warunki.c -o 4-warunki.bin
 	gcc 5-petle.c -o 5-petle.bin
