@@ -1,38 +1,38 @@
 #!/bin/lua
 
--- komentarz
+-- comment
 
 --[[
-	 długi komentarz
-	 na kilka linii
+     long comment
+     on multiple lines
  ]]
 
 --[[
-	 -- testowy kod
-	 -- jak się doda --- na początku to się wykona
-	 print("testowy kod")
+     -- test code
+     -- if you add --- at the beginning it will execute
+     print("test code")
 -- ]]
 
 
 string ="hello"
-liczba=123
-znak='a'
+number=123
+char='a'
 
-print("string=" .. string .. " liczba=" .. liczba .. " znak=" .. znak)
-print("string=", string, "liczba=", liczba, "znak=", znak)
-print("długość stringu \"" .. string .. "\"=", #string)
+print("string=" .. string .. " number=" .. number .. " char=" .. char)
+print("string=", string, "number=", number, "char=", char)
+print("length of string \"" .. string .. "\"=", #string)
 print(arg[0]) -- script name
 
 print(type(string))
-print(type(liczba))
-print(type(znak))
+print(type(number))
+print(type(char))
 print(type(print))
 print(type(true))
 print(type(false))
 print(type(nil))
 
 f=print
-f("wola print jako f()")
+f("calling print as f()")
 
 print("10+1=", 10 + 1)
 print("\"10\" + 1=", "10" + 1)
@@ -40,8 +40,7 @@ print("\"10\" + 1=", "10" + 1)
 print(tonumber("10") + 1)
 print("10" + tostring(1))
 
-print("łączenie stringów 10" .. 1)
-print("łączenie z przecinkiem 10", 1)
-
+print("concatenating strings 10" .. 1)
+print("concatenating with comma 10", 1)
 print(type(tostring(123)))
 

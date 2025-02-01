@@ -1,0 +1,7 @@
+go run 1-hello.go
+
+or
+
+go build 1-hello.go; ./1-czhello
+
+

@@ -1,7 +1,0 @@
-go run 1-czesc.go
-
-LUB
-
-go build 1-czesc.go; ./1-czesc
-
-

@@ -1,2 +1,2 @@
-FILES=2-variables.gnustep 3-operatory.gnustep 4-warunki.gnustep 5-petle.gnustep 6-funkcje.gnustep 7-logika.gnustep 8-struktury.gnustep 9-tablice.gnustep 10-klasy.gnustep
+FILES=2-variables.gnustep 3-operators.gnustep 4-conditionals.gnustep 5-loops.gnustep 6-functions.gnustep 7-logic.gnustep 8-structures.gnustep 9-arrays.gnustep 10-classes.gnustep
 

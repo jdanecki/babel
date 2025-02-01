@@ -9,5 +9,5 @@ clean:
 	rm -rf gcc/*.gnustep clang/*.gnustep gcc/*.d clang/*.d
 
 run:
-	gcc/10-klasy.gnustep
-	clang/10-klasy.gnustep
+	gcc/10-classes.gnustep
+	clang/10-classes.gnustep

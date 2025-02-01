@@ -1,16 +1,16 @@
 #!/bin/bash
-# komentarz
+# comment
 
 # 
-# długi komentarz
-# na kilka linii
+# long comment
+# on multiple lines
 #
 
 string="hello"
-liczba=123
-znak='a'
+number=123
+char='a'
 
-echo "string=$string liczba=$liczba znak=$znak"
+echo "string=$string number=$number char=$char"
 
 let var=10
 echo "\$var=$var"

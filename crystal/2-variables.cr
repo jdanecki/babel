@@ -1,7 +1,6 @@
 #!/bin/crystal
 
-
-# komentarz
+# comment
 #
 
 text="hello"
@@ -31,25 +30,25 @@ p! 2 <=> 1
 
 variable="text"
 p! "variable=#{variable}"
-liczba=123
-p! "liczba=#{liczba}"
+number=123
+p! "number=#{number}"
 
-cudzyslow="\""
-p! "cudzyslow=#{cudzyslow}"
+quote="\""
+p! "quote=#{quote}"
 
-text=%(jakis sobie tekst w "cudzyslowiu")
+text=%(some text in "quotes")
 p! "text=#{text}"
 
-unicode_text="litera ł=\u{142}"
+unicode_text="letter ł=\u{142}"
 p! unicode_text
 
 text="ala"
 p! text.size
 
-nic=nil
-p! nic
+nothing=nil
+p! nothing
 
-#komentarz
+
 # bool 
 p! true, false
 
@@ -61,28 +60,27 @@ p! typeof((1))
 p! 15.to_s(16)
 p! "%#04x" % 15
 
-zmienna=10
-Stala=20
+variable=10
+Constant=20
 
-zmienna+=1
+variable+=1
 
-p! zmienna
-p! Stala
+p! variable
+p! Constant
 
 h={"key"=> "value"}
 p! h
 
 r=1..10
 p! r
-
-enum Miesiac 
-		Styczen
-		Luty
-		Maj=5
-		Czerwiec
+enum Month 
+    January
+    February
+    May=5
+    June
 end
 
-p! Miesiac::Styczen
-p! Miesiac::Maj
-p! Miesiac::Czerwiec
+p! Month::January
+p! Month::May
+p! Month::June
 

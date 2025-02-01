@@ -1,37 +1,37 @@
 #import <Foundation/Foundation.h>
-// komentarz
+// comment
 
 /* 
- * długi komentarz
- * na kilka linii
+ * long comment
+ * on multiple lines
  */
 
 int main()
 {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
-	char * string ="hello";
-	NSString * string1 = @"string1";
-	int liczba=123;
-	char znak='a';
-	int * wskaznik=&liczba;
-	enum miesiac {
-		styczen,
-		luty,
-		maj=5,
-		czerwiec,
-	};
+    char * string ="hello";
+    NSString * string1 = @"string1";
+    int number=123;
+    char character='a';
+    int * pointer=&number;
+    enum month {
+        january,
+        february,
+        may=5,
+        june,
+    };
 
-	NSLog(@"string=%s string1=%@ liczba=%d znak=%c wskaźnik=%p wartość pod wskaźnikiem=%d\n", 
-			string, string1, liczba, znak, wskaznik, *wskaznik);
-	*wskaznik = 456;
-	NSLog(@"string=%s liczba=%d znak=%c wskaźnik=%p wartość pod wskaźnikiem=%d\n", string, liczba, znak, wskaznik, *wskaznik);
+    NSLog(@"string=%s string1=%@ number=%d character=%c pointer=%p value at pointer=%d\n", 
+            string, string1, number, character, pointer, *pointer);
+    *pointer = 456;
+    NSLog(@"string=%s number=%d character=%c pointer=%p value at pointer=%d\n", string, number, character, pointer, *pointer);
 
-	enum miesiac s=styczen;
-	enum miesiac m = maj;
-	enum miesiac c = czerwiec;
+    enum month s=january;
+    enum month m = may;
+    enum month c = june;
 
-	NSLog(@"miesiące:  styczen=%d maj=%d czerwiec=%d\n",s, m, c);
-	[pool drain];
-	return 0;
+    NSLog(@"months:  january=%d may=%d june=%d\n",s, m, c);
+    [pool drain];
+    return 0;
 }

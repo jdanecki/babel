@@ -1,1 +1,1 @@
-Łatwe przykłady w różnych językach (programowania)
+Easy examples in different (programming) languages

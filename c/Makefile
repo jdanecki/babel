@@ -1,13 +1,13 @@
 all: 
-	gcc 1-czesc.c -o 1-czesc.bin
-	gcc 2-zmienne.c -o 2-zmienne.bin
-	gcc 3-operatory.c -o 3-operatory.bin
-	gcc 4-warunki.c -o 4-warunki.bin
-	gcc 5-petle.c -o 5-petle.bin
-	gcc 6-funkcje.c -o 6-funkcje.bin
-	gcc 7-logika.c -o 7-logika.bin
-	gcc 8-struktury.c -o 8-struktury.bin
-	gcc 9-tablice.c -o 9-tablice.bin
+	gcc 1-hello.c -o 1-hello.bin
+	gcc 2-variables.c -o 2-variables.bin
+	gcc 3-operators.c -o 3-operators.bin
+	gcc 4-conditionals.c -o 4-conditionals.bin
+	gcc 5-loops.c -o 5-loops.bin
+	gcc 6-functions.c -o 6-functions.bin
+	gcc 7-logic.c -o 7-logic.bin
+	gcc 8-structures.c -o 8-structures.bin
+	gcc 9-arrays.c -o 9-arrays.bin
 
 clean:
 	rm  *.bin
