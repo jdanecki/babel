@@ -1,53 +1,53 @@
 #!/bin/ruby
 
-liczba=123
-if liczba == 123
-	puts liczba == 123
+number=123
+if number == 123
+	puts number == 123
 end
 
-if ! (liczba == 123)
-	puts "liczba !=123"
+if ! (number == 123)
+	puts "number !=123"
 else
-	puts !(liczba == 123)
+	puts !(number == 123)
 end
 
-if liczba == 456
-	puts "liczba == 456"
-elsif liczba==123
-	puts liczba!=456 && liczba==123
+if number == 456
+	puts "number == 456"
+elsif number==123
+	puts number!=456 && number==123
 else
-	puts "ani 456 ani 123"
+	puts "it's not 456 nor 123"
 end
 
-# chyba że liczba nie jest równa 1
-unless (liczba == 1)
-	puts "liczba !=1"
+# unless number is equal to 1
+unless (number == 1)
+	puts "number !=1"
 end
 
-liczba1=2
-liczba2=3
+number1=2
+number2=3
 
-if (liczba1 < liczba2)
-	puts liczba1 < liczba2
+if (number1 < number2)
+	puts number1 < number2
 end
-if ! (liczba1 > liczba2)
-	puts liczba1 > liczba2
-end
-
-puts("czy #{liczba1} == #{liczba1}? ")
-if  liczba1 == liczba1
-	puts liczba1 == liczba1
+if ! (number1 > number2)
+	puts number1 > number2
 end
 
-puts "czy #{liczba1} != #{liczba2}?"
-if (liczba1 != liczba2) 
-	puts("tak")
+puts("is #{number1} == #{number1}? ")
+if  number1 == number1
+	puts number1 == number1
 end
 
-puts ("czy to nieprawda, że #{liczba1} == #{liczba2}? ")
-if (!(liczba1 == liczba2)) 
-	puts("tak")
+puts "is #{number1} != #{number2}?"
+if (number1 != number2) 
+	puts("yes")
 end
 
-puts("czy to prawda, że #{liczba1} == #{liczba1} -> ", liczba1 == liczba1 ? "tak" : "nie" )
+puts ("is't true #{number1} == #{number2}? ")
+if (!(number1 == number2)) 
+	puts("yes")
+end
+
+puts("is't true #{number1} == #{number1} -> ", number1 == number1 ? "yes" : "no" )
 

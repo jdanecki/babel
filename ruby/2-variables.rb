@@ -1,7 +1,7 @@
 #!/bin/ruby
 
 
-# komentarz
+# comment
 #
 
 text="hello"
@@ -31,16 +31,15 @@ puts 2 <=> 1
 
 variable="text"
 puts "variable=#{variable}"
-liczba=123
-puts "liczba=#{liczba}"
+number=123
+puts "number=#{number}"
 
 cudzyslow="\""
-puts "cudzyslow=#{cudzyslow}"
-
-text=%(jakis sobie tekst w "cudzyslowiu")
+puts "quote=#{quote}"  
+text=%(some random text in "quotes")  
 puts "text=#{text}"
 
-unicode_text="litera ł=\u{142}"
+unicode_text="char ł=\u{142}"
 puts unicode_text
 
 text="ala"
@@ -49,7 +48,7 @@ puts text.size
 nic=nil
 puts nic
 
-#komentarz
+#comment
 # bool 
 puts true, false
 
@@ -61,18 +60,18 @@ puts (1).class
 puts 15.to_s(16)
 puts "%#04x" % 15
 
-zmienna=10
-Stala=20
+variable=10
+Constant=20
 
-zmienna+=1
+variable+=1
 
-puts zmienna
-puts Stala
+puts variable
+puts Constant
 
 h={"key"=> "value"}
 puts h
 
-h1={:klucz => "value"}
+h1={:key => "value"}
 puts h1
 
 r=1..10
@@ -81,22 +80,22 @@ puts "range 1..10=#{r}"
 r=1...10
 puts "range 1...10=#{r}"
 
-module Miesiac 
-		STYCZEN=1
-		LUTY=2
-		Maj=5
-		Czerwiec=6
+module Month 
+		JANUARY=1
+		FEBRUARY=2
+		May=5
+		July=6
 end
 
-puts Miesiac::STYCZEN
-puts Miesiac::Maj
-puts Miesiac::Czerwiec
+puts Month::JANUARY
+puts Month::May
+puts Month::July
 
 puts "1.to_s => #{1.to_s} #{1.to_s.class}"
 puts "\"1\".to_i => #{1.to_s.to_i} #{1.to_s.to_i.class}"
 puts "\"1.1\".to_f => #{1.1.to_s.to_f} #{1.1.to_s.to_f.class}"
 
-puts "ala"+"kot"
+puts "ala"+"cat"
 puts "1"+"2"
 puts "echo" * 4
 
@@ -105,8 +104,8 @@ puts "letni".reverse
 puts "#tag".include?"#"
 
 text=<<END
-jakiś sobie
-długi tekst
+some
+long text
 END
 
 puts text

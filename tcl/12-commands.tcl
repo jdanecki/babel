@@ -2,11 +2,11 @@
 
 set out [exec ls]
 #puts "out=$out"
-set lista [split $out]
+set list [split $out]
 
-puts "rozmiar listy: [llength $lista]"
+puts "list's size: [llength $list]"
 set i 0
-foreach el $lista {
+foreach el $list {
 	puts "el at $i=$el"
 	incr i
 }

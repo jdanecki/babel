@@ -23,7 +23,7 @@ $char='a';
 @array=(4, 5, 6);
 %hash=('key', 10, 'key1', 'value');
 $foo=123;
-@foo=("ala", "ma", "kota");
+@foo=("ala", "has", "a cat");
 %foo=('key', 'value');
 
 print "number=$number char=$char string=$string str1=$str1 array[0]=$array[0] hash{'key'}=$hash{'key'}\n";

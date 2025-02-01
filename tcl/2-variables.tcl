@@ -1,26 +1,26 @@
 #!/bin/tclsh
-# komentarz
+# comment
 
 # 
-# długi komentarz
-# na kilka linii
+# long comment
+# on multiple lines
 #
-puts komentarz ;# komentarz
+puts comment ;# comment
 set str "hello"
-set liczba 123
-set znak 'a'
+set number 123
+set char 'a'
 
-#	enum miesiac {
-#		styczen,
-#		luty,
-#		maj=5,
-#		czerwiec,
+#	enum month {
+#		january,
+#		february,
+#		may=5,
+#		june,
 #	};
 
-puts "str=$str liczba=$liczba znak=$znak"
+puts "str=$str number=$number char=$char"
 puts "string size=[string length $str]"
 
-set Z costam
+set Z something
 puts "\$Z=$Z"
 
 set a 123
@@ -52,8 +52,8 @@ set a [expr 2+2]
 puts "a=$a"
 
 
-#	enum miesiac s=styczen;
-#	enum miesiac m = maj;
-#	enum miesiac c = czerwiec;
+#	enum month s=january;
+#	enum month m = may;
+#	enum month c = june;
 
-#	printf("miesiące:  styczen=%d maj=%d czerwiec=%d\n",s, m, c);
+#	printf("months:  january=%d may=%d june=%d\n",s, m, c);

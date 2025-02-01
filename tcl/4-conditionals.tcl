@@ -1,44 +1,43 @@
 #!/bin/tclsh
 
-set liczba1 2
-set liczba2 3
+set number1 2
+set number2 3
 
 puts [expr { 1 < 2 }]
 puts [expr { 1 > 2 }]
 
-if {$liczba1 < $liczba2} \
-	{ puts "$liczba1 < $liczba2 => [ expr {$liczba1 < $liczba2} ]" }
+if {$number1 < $number2} \
+	{ puts "$number1 < $number2 => [ expr {$number1 < $number2} ]" }
 
 
-if {$liczba1 > $liczba2} { 
-	puts "$liczba1 > $liczba2 => [ expr {$liczba1 > $liczba2} ]" 
+if {$number1 > $number2} { 
+	puts "$number1 > $number2 => [ expr {$number1 > $number2} ]" 
 } else { 
-	puts "$liczba1 < $liczba2 => [ expr {$liczba1 < $liczba2} ]" 
+	puts "$number1 < $number2 => [ expr {$number1 < $number2} ]" 
 }
 
-if {$liczba1 > $liczba2} { puts "$liczba1 > $liczba2 " } else { puts "$liczba1 < $liczba2" }
+if {$number1 > $number2} { puts "$number1 > $number2 " } else { puts "$number1 < $number2" }
 
 
-puts "czy $liczba1 == $liczba1"
-if {$liczba1 == $liczba1} { puts "tak "}
+puts "czy $number1 == $number1"
+if {$number1 == $number1} { puts "yes "}
 
-puts "czy $liczba1 != $liczba2"
-if {$liczba1 != $liczba2} { puts "tak "}
+puts "czy $number1 != $number2"
+if {$number1 != $number2} { puts "yes "}
 
+	#puts "is it not true that $number1 == $number2?"
+	#if { ! { $number1 == $number2} } { puts("yes")}
 	
-#puts "czy to nieprawda, że $liczba1 == $liczba2?"
-#if { ! { $liczba1 == $liczba2} } { puts("tak")}
-
-puts [ expr { $liczba1 < $liczba2 ? 10 : 20} ]
-
-puts "czy to prawda, że $liczba1 == $liczba1 -> [ expr {$liczba1 == $liczba1  ? "tak" : "nie" } ]"
-
-switch $liczba1 {
-	2 {
-		puts "liczba1 to 2"
-	}
-	default {
-		puts "liczba1 to nie 2"
+	puts [ expr { $number1 < $number2 ? 10 : 20} ]
+	
+	puts "is it true that $number1 == $number1 -> [ expr {$number1 == $number1  ? "yes" : "no" } ]"
+	
+	switch $number1 {
+		2 {
+			puts "number1 is 2"
+		}
+		default {
+			puts "number1 is not 2"
 	}
 }
 

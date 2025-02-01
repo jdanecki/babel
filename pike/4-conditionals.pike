@@ -1,21 +1,21 @@
 #!/usr/local/bin/pike
 int main()
 {
-	int liczba1=2, liczba2=3;
+	int number1=2, number2=3;
 
-	if (liczba1 < liczba2) write("%d < %d -> %d\n", liczba1, liczba2, liczba1 < liczba2);
-	write("%d > %d -> %d\n", liczba1, liczba2, liczba1 > liczba2);
+	if (number1 < number2) write("%d < %d -> %d\n", number1, number2, number1 < number2);
+	write("%d > %d -> %d\n", number1, number2, number1 > number2);
 	
-	write("czy %d == %d? ", liczba1, liczba1);
-	if (liczba1 == liczba1) write("tak\n");
+	write("is %d == %d? ", number1, number1);
+	if (number1 == number1) write("yes\n");
 
-	write("czy %d != %d? ", liczba1, liczba2);
-	if (liczba1 != liczba2) write("tak\n");
+	write("is %d != %d? ", number1, number2);
+	if (number1 != number2) write("yes\n");
 		
-	write("czy to nieprawda, że %d == %d? ", liczba1, liczba2);
-	if (!(liczba1 == liczba2)) write("tak\n");
+	write("is it not true that %d == %d? ", number1, number2);
+	if (!(number1 == number2)) write("yes\n");
 	
-	write("czy to prawda, że %d == %d -> %s ", liczba1, liczba1, liczba1 == liczba1 ? "tak" : "nie" );
+	write("is it true that %d == %d -> %s ", number1, number1, number1 == number1 ? "yes" : "no" );
 
 	return 0;
 }	

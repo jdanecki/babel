@@ -12,9 +12,9 @@ puts [info tclversion]
 puts [pid]
 puts [info level]
 
-proc funkcja {arg} {
+proc function {arg} {
 	puts "arg=$arg"
 }
 
-puts [info body funkcja]
+puts [info body function]
 

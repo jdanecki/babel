@@ -1,49 +1,47 @@
 #!/bin/ruby
-
-Samochod = Struct.new(:marka , :rok) do
-	def show
-		puts "marka: #{marka}"
-		puts "rok: #{rok}"
-	end
+Car = Struct.new(:brand , :year) do
+    def show
+        puts "brand: #{brand}"
+        puts "year: #{year}"
+    end
 end
 
-def pokaz(s)
-		puts "marka: #{s.marka}"
-		puts "rok: #{s.rok}"
+def show(s)
+        puts "brand: #{s.brand}"
+        puts "year: #{s.year}"
 end
 
-volvo = Samochod.new("volvo v40", 2010) 
-	
+volvo = Car.new("volvo v40", 2010) 
+    
 volvo.show()
-pokaz(volvo)
+show(volvo)
 
-volvo.marka = "volvo v70"
-volvo.rok = 2020
-pokaz(volvo)
+volvo.brand = "volvo v70"
+volvo.year = 2020
+show(volvo)
 
-class Punkt
-	attr_accessor :x, :y, :suma, :dodatek
-	def initialize(a, b, c )
-		@x=a
-		@y=b
-		@suma=a+b
-        @dodatek=c
-	end
-	def get_x
-		@x
-	end
-	def get_y
-		@y
-	end
+class Point
+    attr_accessor :x, :y, :sum, :extra
+    def initialize(a, b, c )
+        @x=a
+        @y=b
+        @sum=a+b
+        @extra=c
+    end
+    def get_x
+        @x
+    end
+    def get_y
+        @y
+    end
 end
 
-p=Punkt.new(1,2, 5)
-puts "punkt: x=#{p.get_x} y=#{p.get_y} x=#{p.x} y=#{p.y}"
+p=Point.new(1,2, 5)
+puts "point: x=#{p.get_x} y=#{p.get_y} x=#{p.x} y=#{p.y}"
 p.x=10
-p.dodatek=20
-puts "punkt: x=#{p.get_x} y=#{p.get_y} x=#{p.x} y=#{p.y}"
-puts p.suma
-puts p.suma
-puts p.dodatek
-
+p.extra=20
+puts "point: x=#{p.get_x} y=#{p.get_y} x=#{p.x} y=#{p.y}"
+puts p.sum
+puts p.sum
+puts p.extra
 puts "p.send \"get_x\" #{p.send "get_x"}"

@@ -1,55 +1,55 @@
 #!/usr/local/bin/pike
-void iloczyn(int a, int b)
+void product(int a, int b)
 {
-	write("iloczyn %d && %d = %d\n", a, b, a && b);
+	write("product %d && %d = %d\n", a, b, a && b);
 }
 
-void suma(int a, int b)
+void sum(int a, int b)
 {
-	write("suma %d || %d = %d\n", a, b, a || b);
+	write("sum %d || %d = %d\n", a, b, a || b);
 }
 
-void suma_xor(int a, int b)
+void sum_xor(int a, int b)
 {
-	write("suma xor %d ^ %d = %d\n", a, b, a ^ b);
+	write("sum xor %d ^ %d = %d\n", a, b, a ^ b);
 }
 
-void negacja(int a)
+void negation(int a)
 {
-	write("negacja !%d  = %d\n", a, !a);
+	write("negation !%d  = %d\n", a, !a);
 }
 
 
 int main()
 {
-	int zero=0, jeden=1;
+	int zero=0, one=1;
 
-	iloczyn(zero, zero);
-	iloczyn(zero, jeden);
-	iloczyn(jeden, zero);
-	iloczyn(jeden, jeden);
+	product(zero, zero);
+	product(zero, one);
+	product(one, zero);
+	product(one, one);
 
-	suma(zero, zero);
-	suma(zero, jeden);
-	suma(jeden, zero);
-	suma(jeden, jeden);
+	sum(zero, zero);
+	sum(zero, one);
+	sum(one, zero);
+	sum(one, one);
 	
-	suma_xor(zero, zero);
-	suma_xor(zero, jeden);
-	suma_xor(jeden, zero);
-	suma_xor(jeden, jeden);
+	sum_xor(zero, zero);
+	sum_xor(zero, one);
+	sum_xor(one, zero);
+	sum_xor(one, one);
 
-	negacja(zero);
-	negacja(jeden);
+	negation(zero);
+	negation(one);
 
 	int a=3;
 	int b=1;
 	int c=2;
 	
-	write("iloczyn: %d & %d = %d\n", a, b, a & b);
-	write("suma: %d | %d = %d\n", b, c, b | c);
-	write("suma modulo 2 (xor) %d ^ %d = %d\n", b, c, b ^ c);
-	write("negacja ~%d = %d\n", b, ~b);
+	write("product: %d & %d = %d\n", a, b, a & b);
+	write("sum: %d | %d = %d\n", b, c, b | c);
+	write("sum modulo 2 (xor) %d ^ %d = %d\n", b, c, b ^ c);
+	write("negation ~%d = %d\n", b, ~b);
 
 	return 0;
 }

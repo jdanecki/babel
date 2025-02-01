@@ -2,34 +2,32 @@
 
 # hash arrays
 # index is string
-
-set  rozmiar 10
-set  rozmiar_x 2
-set  rozmiar_y 5
+set size 10
+set size_x 2
+set size_y 5
 
 set a(1) 10
 set a(2) 7
 set a(3) 17
-set b    2
+set b 2
 puts "Sum: a(1)=$a(1) a(b)=$a($b) b=$b [expr {$a(1)+$a($b)}]"
 
-for {set i 0} {$i < $rozmiar} { incr i}  {
-   set tablica($i) [ expr 100 + $i]
-   puts "tablica($i)=$tablica($i)"
+for {set i 0} {$i < $size} { incr i}  {
+    set array($i) [ expr 100 + $i]
+    puts "array($i)=$array($i)"
 }
 
-puts "rozmiar: tablica=[array size tablica]"
+puts "size: array=[array size array]"
 
-for {set y 0} { $y < $rozmiar_y} {incr y} {
-	for {set x 0} { $x < $rozmiar_x} {incr x} {
-#		puts "y=$y x=$x"
-		set kartka($y,$x) [expr 10*$y + $x]
-		puts "kartka($y,$x) = $kartka($y,$x)"
-	}
+for {set y 0} { $y < $size_y} {incr y} {
+    for {set x 0} { $x < $size_x} {incr x} {
+        set sheet($y,$x) [expr 10*$y + $x]
+        puts "sheet($y,$x) = $sheet($y,$x)"
+    }
 }
 
-foreach {name value} [array get kartka] {
-	puts "kartka: key=$name value=$value"
+foreach {name value} [array get sheet] {
+    puts "sheet: key=$name value=$value"
 }
 
 

@@ -1,31 +1,31 @@
 #!/usr/local/bin/pike
-class samochod
+class car
 {
-	string marka;
-	int rok_produkcji;
+	string brand;
+	int year_of_production;
 };
 
-void pokaz(samochod s)
+void show(car s)
 {
-	write("marka: %s\n", s->marka);
-	write("rok produkcji: %d\n", s->rok_produkcji);
+	write("brand: %s\n", s->brand);
+	write("year of production: %d\n", s->year_of_production);
 }
 
 int main()
 {
-	samochod volvo = samochod();
-	samochod matiz;
+	car volvo = car();
+	car matiz;
 	
-	volvo->marka = "volvo v40";
-	volvo->rok_produkcji = 2010;
+	volvo->brand = "volvo v40";
+	volvo->year_of_production = 2010;
 
-	pokaz(volvo);
+	show(volvo);
 	
-	matiz=samochod();
-	matiz->marka="matiz";
-	matiz->rok_produkcji=2007;
+	matiz=car();
+	matiz->brand="matiz";
+	matiz->year_of_production=2007;
 
-	pokaz(matiz);
+	show(matiz);
 
 	return 0;
 }

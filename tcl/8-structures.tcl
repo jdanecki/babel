@@ -1,23 +1,23 @@
 #include <stdio.h>
-struct samochod
+struct car
 {
-	char * marka;
-	int rok_produkcji;
+    char * brand;
+    int year_of_production;
 };
 
-void pokaz(struct samochod *s)
+void show(struct car *s)
 {
-	printf("marka: %s\n", s->marka);
-	printf("rok produkcji: %d\n", s->rok_produkcji);
+    printf("brand: %s\n", s->brand);
+    printf("year of production: %d\n", s->year_of_production);
 }
 
 int main()
 {
-	struct samochod volvo;
-	
-	volvo.marka = "volvo v40";
-	volvo.rok_produkcji = 2010;
+    struct car volvo;
+    
+    volvo.brand = "volvo v40";
+    volvo.year_of_production = 2010;
 
-	pokaz(&volvo);
+    show(&volvo);
 	return 0;
 }

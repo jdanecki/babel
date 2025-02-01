@@ -38,22 +38,22 @@ int main()
 	for (int h=0; h < 10; h++)
 	{
 		if (h == 4) {
-			write("mam 4");			
+			write("I've got 4");			
 			continue;
 		}
 		if (h==5) {
-			write("skok w bok: %d\n", h);		
+			write("side jump: %d\n", h);		
 			continue;
 		}
 
 		switch(h)
 		{
-			case 1: write("jeden\n"); break;
-			default: write("coś innego niż 1, bo %d\n", h); break;
+			case 1: write("one\n"); break;
+			default: write("something else than 1, because %d\n", h); break;
 		}
 	}
 
-	array(string) tablica=({"ala", "ma", "kota"});
+	array(string) tablica=({"ala", "has", "a cat"});
 	foreach(tablica, string r)
 	{ 
 		write(r + " ");

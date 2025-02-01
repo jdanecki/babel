@@ -1,4 +1,4 @@
-jest w debianie
+available in debian
 https://pike.lysator.liu.se/about/
 
 

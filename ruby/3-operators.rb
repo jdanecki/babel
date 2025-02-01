@@ -1,16 +1,16 @@
 #!/bin/ruby
 
-liczba1=2
-liczba2=3
+number1=2
+number2=3
 
 #arytmetyczne
-puts liczba1 + liczba2
-puts liczba1 - liczba2
-puts liczba1 * liczba2
-puts liczba1 / liczba2
+puts number1 + number2
+puts number1 - number2
+puts number1 * number2
+puts number1 / number2
 
-puts liczba1-=10
-puts liczba1+=10
+puts number1-=10
+puts number1+=10
 
 #logiczne
 puts true && true

@@ -24,13 +24,13 @@ while {$e < 50} {
 for { set  h 0} { $h < 10} {incr h} {
 	puts "for $h"
 	if {$h == 4} {
-		puts "mam 4"
+		puts "I've got 4"
 		continue
 	}
-	if {$h==5} { puts "skok w bok: h=$h" }
+	if {$h==5} { puts "side jump: h=$h" }
 	
 	switch $h {
-		1 { puts "jeden" }
-	  	default { puts "coś innego niż 1, bo $h" }
+		1 { puts "one" }
+		default { puts "something other than 1, because $h" }
   	}
 }

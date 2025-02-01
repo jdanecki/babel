@@ -13,34 +13,34 @@ tab.each do |i|
 	puts "val=#{i}"
 end
 
-rozmiar=10
-rozmiar_x=2
-rozmiar_y=5
+size=10
+size_x=2
+size_y=5
 
-tablica=Array.new(rozmiar, 123)
-puts tablica.size
-puts tablica[0]
+array=Array.new(size, 123)
+puts array.size
+puts array[0]
 
-(0..rozmiar-1).each do |i|
-   tablica[i] = 100+i
-   puts "tablica[#{i}]=#{tablica[i]}"
+(0..size-1).each do |i|
+   array[i] = 100+i
+   puts "array[#{i}]=#{array[i]}"
 end
 
-tab1=Array.new(rozmiar)
+tab1=Array.new(size)
 puts tab1.size
 
-(0..rozmiar-1).each do |i|
+(0..size-1).each do |i|
    tab1 << 200+i
    puts "tab1[#{i}]=#{tab1[i]} tab1.size=#{tab1.size}"
 end
 
-kartka = Array.new(rozmiar_y) { Array.new(rozmiar_x) { 0 } }
-puts kartka
+sheet = Array.new(size_y) { Array.new(size_x) { 0 } }
+puts sheet
 
-(0..rozmiar_y-1).each do |y|
-	(0..rozmiar_x-1).each do |x|
-		kartka[y][x] = 10*y+x
-		puts "kartka[#{y}][#{x}] = #{kartka[y][x]}"
+(0..size_y-1).each do |y|
+	(0..size_x-1).each do |x|
+		sheet[y][x] = 10*y+x
+		puts "sheet[#{y}][#{x}] = #{sheet[y][x]}"
 	end
 end
 

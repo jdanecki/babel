@@ -1,30 +1,27 @@
 #!/usr/local/bin/pike
-// komentarz
-
 /* 
- * długi komentarz
- * na kilka linii
+ * long comment
+ * on multiple lines
  */
 
 int main()
 {
-	string str="hello";
-	int liczba=123;
-	string znak="a";
-	enum miesiac {
-		styczen=0,
-		luty=1,
-		maj=5,
-		czerwiec=6
-	};
+    string str="hello";
+    int number=123;
+    string character="a";
+    enum month {
+        january=0,
+        february=1,
+        may=5,
+        june=6
+    };
 
-	write("string=%s liczba=%d znak=%s \n", str, liczba, znak);
+    write("string=%s number=%d character=%s \n", str, number, character);
 
-	miesiac s=styczen;
-	miesiac m = maj;
-	miesiac c = czerwiec;
+    month s=january;
+    month m = may;
+    month c = june;
 
-	write("miesiące:  styczen=%d maj=%d czerwiec=%d\n",s, m, c);
-
+    write("months:  january=%d may=%d june=%d\n",s, m, c);
 	return 0;
 }

@@ -1,34 +1,34 @@
 #!/bin/ruby
-licznik=0
+counter=0
 
-while licznik < 10
-	puts "licznik: #{licznik}"
-	licznik+=1
+while counter < 10
+	puts "counter: #{counter}"
+	counter+=1
 end
 
-until licznik == 20
-	puts "licznik: #{licznik}"
-	licznik+=1
+until counter == 20
+	puts "counter: #{counter}"
+	counter+=1
 end
 
-until  licznik == 30
-	if licznik == 25 
-		puts "25 nie lubie"
-		licznik+=1
+until  counter == 30
+	if counter == 25 
+		puts "I don't like 25"
+		counter+=1
 		next
 	elseif
-		puts "licznik: #{licznik}"
+		puts "counter: #{counter}"
 	end
-	licznik+=1
+	counter+=1
 end
 
 while true
-	if licznik == 35
-		puts "dość liczenia"
+	if counter == 35
+		puts "enough with counting"
 		break;
 	end
-	puts "licznik: #{licznik}"
-	licznik+=1
+	puts "counter: #{counter}"
+	counter+=1
 end
 
 (1..5).each do | i|
@@ -47,18 +47,18 @@ end
   puts "5.times a=#{a}"
 end
 
-liczba=["jeden", "dwa", "trzy"]
-liczba.each do | l |
+number=["one", "two", "tree"]
+number.each do | l |
 	puts l
 end
 
-for f in liczba
+for f in number
   puts "f=#{f}"
   case f
-  when "dwa"
-    puts "to jest dwa"
+  when "two"
+    puts "it's two"
   else
-    puts "coś innego niż dwa"
+    puts "something else than two"
   end
 end
 

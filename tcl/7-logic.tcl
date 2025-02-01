@@ -1,57 +1,57 @@
 #!/bin/tclsh
 
 
-proc iloczyn {a b} {
-	puts "iloczyn $a  && $b = [ expr { $a && $b} ]"
+proc product {a b} {
+	puts "product $a  && $b = [ expr { $a && $b} ]"
 }
 
-proc suma {a b} {
-	puts "suma $a  || $b = [ expr { $a || $b} ]"
+proc sum {a b} {
+	puts "sum $a  || $b = [ expr { $a || $b} ]"
 }
 
-proc suma_xor {a b} {
-	puts "suma xor $a  ^ $b = [ expr { $a ^ $b} ]"
+proc sum_xor {a b} {
+	puts "sum xor $a  ^ $b = [ expr { $a ^ $b} ]"
 }
 
-proc negacja {a} {
-	puts "negacja !$a = [ expr {!$a} ]"
+proc negation {a} {
+	puts "negation !$a = [ expr {!$a} ]"
 }
 
 
 set zero  0
-set jeden 1
+set one 1
 
-iloczyn $zero  $zero  
-iloczyn $zero  $jeden  
-iloczyn $jeden  $zero  
-iloczyn $jeden  $jeden  
+product $zero  $zero  
+product $zero  $one  
+product $one  $zero  
+product $one  $one  
 
-suma $zero  $zero  
-suma $zero  $jeden  
-suma $jeden  $zero  
-suma $jeden  $jeden  
+sum $zero  $zero  
+sum $zero  $one  
+sum $one  $zero  
+sum $one  $one  
 
-suma_xor $zero  $zero  
-suma_xor $zero  $jeden  
-suma_xor $jeden  $zero  
-suma_xor $jeden  $jeden  
+sum_xor $zero  $zero  
+sum_xor $zero  $one  
+sum_xor $one  $zero  
+sum_xor $one  $one  
 
-negacja $zero  
-negacja $jeden  
+negation $zero  
+negation $one  
 
 set a 3 
 set b 1 
 set c 2 
 	
-set liczba1 2
-set liczba2 3
+set number1 2
+set number2 3
 
-puts "$liczba1 + $liczba2 = [ expr {$liczba1 + $liczba2} ]"
+puts "$number1 + $number2 = [ expr {$number1 + $number2} ]"
 
-puts "iloczyn: $a & $b = [ expr {$a & $b }]"
-puts "suma: $a | $b = [ expr {$a | $b }]"
-puts "suma xor: $a ^ $b = [ expr {$a ^ $b }]"
-puts "negacja: ~ $b = [ expr { ~$b & 1}]"
+puts "product: $a & $b = [ expr {$a & $b }]"
+puts "sum: $a | $b = [ expr {$a | $b }]"
+puts "sum xor: $a ^ $b = [ expr {$a ^ $b }]"
+puts "negation: ~ $b = [ expr { ~$b & 1}]"
 
 
 

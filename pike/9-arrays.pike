@@ -1,32 +1,32 @@
 #!/usr/local/bin/pike
 
-#define rozmiar 10
-#define rozmiar_x 2
-#define rozmiar_y 5
+#define size 10
+#define size_x 2
+#define size_y 5
 
 
 int main()
 {
-	array(int) tablica=({});
-	array(int) tablica1=allocate(rozmiar);
-	//array(array(int)) kartka=({ ({}) });
-	array(array(int)) kartka=allocate(rozmiar_x*rozmiar_y);
+	array(int) array=({});
+	array(int) array1=allocate(size);
+	//array(array(int)) sheet=({ ({}) });
+	array(array(int)) sheet=allocate(size_x*size_y);
 	
-	for (int i= 0; i < rozmiar; i++) {
-	   tablica+=({100+i});
-	   tablica1[i]=100+i;
-	   write("tablica[%d]=%d tablica1=%d -> %d %d\n", i, tablica[i],tablica1[i], sizeof(tablica),sizeof(tablica1));
+	for (int i= 0; i < size; i++) {
+	   array+=({100+i});
+	   array1[i]=100+i;
+	   write("array[%d]=%d array1=%d -> %d %d\n", i, array[i],array1[i], sizeof(array),sizeof(array1));
 	}
 
-	for (int y=0; y < rozmiar_y; y++)
+	for (int y=0; y < size_y; y++)
 	{
-		write("%d ", sizeof(kartka));
-		kartka[y]=({0});
-		for (int x=0; x < rozmiar_x; x++)
+		write("%d ", sizeof(sheet));
+		sheet[y]=({0});
+		for (int x=0; x < size_x; x++)
 		{
-			kartka[y]+=({0});
-			kartka[y][x]= 10*y+x;
-			write("kartka[%d][%d] = %d -> %d\n", y, x, kartka[y][x], sizeof(kartka));
+			sheet[y]+=({0});
+			sheet[y][x]= 10*y+x;
+			write("sheet[%d][%d] = %d -> %d\n", y, x, sheet[y][x], sizeof(sheet));
 		}
 	}
 	return 0;
